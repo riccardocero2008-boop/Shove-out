@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/next';
+
 export const metadata = {
   title: 'SHOVE — Shrinking Arena Sumo Duel',
   description: 'SHOVE — a shrinking arena sumo duel game.',
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
